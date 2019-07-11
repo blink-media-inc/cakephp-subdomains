@@ -22,6 +22,7 @@
 namespace Multidimensional\Subdomains\Middleware;
 
 use Cake\Core\Configure;
+use Cake\Utility\Inflector;
 
 class SubdomainMiddleware
 {
@@ -46,6 +47,18 @@ class SubdomainMiddleware
 
             if (empty($params['prefix'])) {
                 $params['prefix'] = $prefix;
+            }
+
+            if (!empty($params['plugin'])) {
+                unset($params['prefix']);
+            }
+
+            if (!empty($params['controller'])) {
+                $params['controller'] = ucfirst($params['controller']);
+            }
+
+            if (!empty($params['action'])) {
+                $params['action'] = Inflector::variable($params['action']);
             }
 
             $request = $request->withAttribute('params', $params);

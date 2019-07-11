@@ -1,13 +1,13 @@
 {
-    "name": "multidimensional/cakephp-subdomains",
+    "name": "blink-media-inc/cakephp-subdomains",
     "description": "Easily add sub domains to your CakePHP application using route prefixes.",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "cakephp3", "subdomains"],
-    "homepage": "https://github.com/multidimension-al/cakephp-subdomains",
+    "homepage": "https://github.com/blink-media-inc/cakephp-subdomains",
     "license": "MIT",
     "authors": [{
-        "name": "multidimension.al",
-        "homepage": "https://multidimension.al",
+        "name": "blink-media-inc",
+        "homepage": "https://blink.la",
         "role": "Developer"
     }],
     "require": {
