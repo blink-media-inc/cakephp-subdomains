@@ -54,7 +54,7 @@ class SubdomainMiddleware
             }
 
             if (!empty($params['controller'])) {
-                $params['controller'] = ucfirst($params['controller']);
+                $params['controller'] = ucfirst(Inflector::variable($params['controller']));
             }
 
             if (!empty($params['action'])) {
